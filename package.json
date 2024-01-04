@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "prettier": {
+    "proseWrap": "preserve",
+    "printWidth": 1000,
+    "singleQuote": true
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css -w"
