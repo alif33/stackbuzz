@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.accordion-container .tab {
+    position: relative;
+    background: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.accordion-container .tab input {
+    appearance: none;
+}
+.accordion-container .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.accordion-container .tab label::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+.accordion-container .tab:hover label::after {
+    color: #333;
+}
+.accordion-container .tab input:checked ~ label::after {
+    transform: rotate(135deg);
+}
+.accordion-container .tab label h2 {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.accordion-container .tab label h3 {
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
+}
+.accordion-container .tab .content {
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.accordion-container .tab input:checked ~ .content {
+    max-height: 100vh;
+}
+
+.input {
+    @apply border border-grey-400 h-[50px] duration-300 focus:shadow-md focus:shadow-grey-400 focus:bg-white outline-none p-5 text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md;
+}

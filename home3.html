@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutritionist | Synergy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar Section -->
+      <div class="shadow-sm lg:block">
+        <div class="max-w-6xl mx-auto">
+          <div
+            class="flex flex-row justify-between py-4 px-2 lg:px-0 items-center"
+          >
+            <!-- left -->
+            <a href="/index.html">
+              <img src="/assets/images/icons/logo-2.svg" alt="Site Logo" />
+            </a>
+            <div
+              onclick="showMenu()"
+              class="bg-brand-1 cursor-pointer rounded-sm p-[5px] md:hidden"
+            >
+              <img
+                src="./assets/images/icons/hamburger-menu.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <!-- sidebar -->
+            <div
+              class="hidden sidebar fixed top-0 right-0 h-full w-full z-[999] bg-brand-2 duration-300 transition-all"
+            >
+              <div class="flex flex-col p-5">
+                <button
+                  class="flex flex-row text-right justify-end rounded-md p-3"
+                >
+                  <img
+                    onclick="hideMenu()"
+                    src="./assets/images/icons/menu-close.svg"
+                    alt=""
+                    class="w-8 text-center"
+                  />
+                </button>
+                <div class="flex flex-col gap-3 mt-5">
+                  <a
+                    href="/about.html"
+                    class="text-lg px-5 py-3 font-semibold text-white hover:bg-grey-200 duration-300 hover:text-brand-1"
+                    >Home</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/about.html"
+                    >About</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/service.html"
+                    >Service</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/work.html"
+                    >Work</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/blog.html"
+                    >Blog</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/contact.html"
+                    >Contact</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/faq.html"
+                    >FAQ</a
+                  >
+                  <div
+                    class="mx-auto fixed bottom-5 right-[25%] flex flex-row gap-5"
+                  >
+                    <a
+                      class="py-2 px-3 ring-[1px] ring-gray-400 rounded-md text-white"
+                      href="/sign-in"
+                      >Signin</a
+                    >
+                    <a class="" href="/"
+                      ><button
+                        class="py-3 px-6 hover:bg-[#57d8c9d8] duration-500 active:bg-brand-1 undefined font-medium text-white text-sm bg-brand-1 rounded-md"
+                      >
+                        Get Started Free
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right  -->
+            <div
+              class="md:flex hidden md:gap-3 lg:gap-5 lg:flex flex-row items-center justify-end"
+            >
+              <a href="/about.html" class="text-brand-1 font-bold">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/service.html">Service</a>
+              <a href="/work.html">Work</a>
+              <a href="/blog.html">Blog</a>
+              <a href="/contact.html">Contact</a>
+              <a href="/faq.html">FAQ</a>
+
+              <div
+                class="flex md:ml-5 flex-row gap-5 text-lg text-[04091E] font-medium font-urbanist items-center"
+              >
+                <a
+                  href="/signin.html"
+                  class="ring-[1px] ring-gray-400 text-sm lg:rounded-md md:rounded-sm md:py-2 md:px-3 lg:py-3 lg:px-4"
+                >
+                  Sign In
+                </a>
+                <button
+                  class="ring-[1px] ring-brand-1 text-sm lg:py-3 lg:px-6 md:py-2 md:px-4 hover:bg-[#ffffff] duration-500 active:bg-brand-1 font-medium text-white hover:text-brand-1 bg-brand-1 lg:rounded-md md:rounded-sm"
+                >
+                  Get Started Free
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+    </header>
+    <!-- /Header -->
+    <!-- Hero Section -->
+    <section class="bg-[#FAFAFA] lg:px-0 px-2 pt-16 pb-14">
+      <div class="lg:max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-20 items-center">
+          <div class="lg:w-1/2">
+            <h1
+              class="lg:text-4xl text-3xl lg:text-[80px] leading-tight text-center lg:text-left lg:leading-[90px] text-[#110904] font-semibold font-urbanist"
+            >
+              Nutritionist that can make you
+              <span class="text-brand-1">happy</span>
+            </h1>
+            <p
+              class="text-[#969696] text-sm lg:text-left text-center lg:text-xl font-normal mt-5 lg:leading-8 leading-normal"
+            >
+              Always take care of your health starting from the food menu that
+              you consume every day
+            </p>
+            <div
+              class="my-8 lg:my-16 flex lg:flex-row flex-col gap-5 items-center justify-center lg:justify-start"
+            >
+              <button
+                class="flex flex-row gap-2 rounded-full bg-brand-1 py-3 px-8 text-white text-base font-semibold"
+              >
+                See Pricing
+              </button>
+              <button class="flex text-lg font-bold py-4 px-6 flex-row gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.99999 18.3333C14.6024 18.3333 18.3333 14.6023 18.3333 9.99996C18.3333 5.39759 14.6024 1.66663 9.99999 1.66663C5.39762 1.66663 1.66666 5.39759 1.66666 9.99996C1.66666 14.6023 5.39762 18.3333 9.99999 18.3333ZM8.91123 13.2048L12.8447 10.8824C13.4962 10.4978 13.4962 9.50212 12.8447 9.11749L8.91123 6.79512C8.27808 6.4213 7.49999 6.90785 7.49999 7.67759V12.3223C7.49999 13.0921 8.27808 13.5786 8.91123 13.2048Z"
+                    fill="#2A9D8F"
+                  />
+                </svg>
+                Watch Video
+              </button>
+            </div>
+            <div class="flex flex-col items-center lg:items-start">
+              <h3 class="mb-4 text-base font-semibold">
+                Loved By 350+ Customers
+              </h3>
+              <div>
+                <img
+                  height="54px"
+                  width="203px"
+                  src="./assets/images/trusted-customers.svg"
+                  alt="Trusted customers"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <img
+              width="505px"
+              height="791px"
+              src="./assets/images/banners/banner.svg"
+              alt="Hero Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sponsors -->
+    <section class="mt-12">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-[#969696] text-center text-xl font-urbanist font-normal">
+          Trusted by <span class="text-[#282828] font-bold">250+</span>
+          Company
+        </p>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 justify-center mt-4 gap-2"
+        >
+          <img
+            height="38px"
+            width="200px"
+            class="lg:p-6 p-3"
+            src="./assets/images/companies/bestbank.svg"
+            alt="Company logo"
+          />
+          <img
+            height="38px"
+            width="200px"
+            class="lg:p-6 p-3"
+            src="./assets/images/companies/overlays.svg"
+            alt="Company logo"
+          />
+          <img
+            height="38px"
+            width="200px"
+            class="lg:p-6 p-3"
+            src="./assets/images/companies/payscale.svg"
+            alt="Company logo"
+          />
+          <img
+            height="38px"
+            width="200px"
+            class="lg:p-6 p-3"
+            src="./assets/images/companies/starsup.svg"
+            alt="Company logo"
+          />
+          <img
+            height="38px"
+            width="200px"
+            class="lg:p-6 p-3"
+            src="./assets/images/companies/teamtalk.svg"
+            alt="Company logo"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Nutrition -->
+    <section class="">
+      <div class="font-urbanist mt-16 lg:mt-32 max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-40 items-center">
+          <h1
+            class="text-[#141414] w-full lg:w-6/12 text-2xl lg:text-[32px] lg:text-5xl text-center lg:text-left font-semibold leading-tight lg:leading-[54px]"
+          >
+            An innovative approach to your
+            <span class="text-[#2A9D8F]">nutrition</span>
+          </h1>
+          <p
+            class="w-full text-base text-center lg:w-5/12 font-normal leading-6"
+          >
+            We provide a variety of services and resources dedicated to helping
+            you achieve balance and peace in your life.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-between mt-14"
+        >
+          <!-- Card 1 -->
+          <div
+            class="p-6 border nutrition-card group hover:bg-[#2A9D8F] duration-500 h-72 flex flex-col justify-between rounded-lg"
+          >
+            <div>
+              <div class="text-2xl bg-[#F4F8FF] p-3 rounded-full inline-block">
+                <i class="fa-solid fa-apple-whole"></i>
+              </div>
+              <h3
+                class="text-xl mt-4 group-hover:text-white font-semibold text-[#333B47]"
+              >
+                Learn to eat healthy food
+              </h3>
+              <p
+                class="text-[#969696] group-hover:text-white text-sm font-normal mt-2"
+              >
+                Lorem ipsum dolor sit amet ecteturolmer adipiscing elit sed do
+                eiusmod.
+              </p>
+            </div>
+            <button
+              class="flex group-hover:text-white flex-row text-[#212A3D] gap-3 text-base items-center"
+            >
+              Read More
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="p-6 border nutrition-card bg-[#2A9D8F] duration-500 h-72 flex flex-col justify-between rounded-lg"
+          >
+            <div>
+              <div class="text-2xl bg-[#F4F8FF] p-3 rounded-full inline-block">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3 class="text-xl mt-4 font-semibold text-white">
+                Learn to eat healthy food
+              </h3>
+              <p class="text-white text-sm font-normal mt-2">
+                Lorem ipsum dolor sit amet ecteturolmer adipiscing elit sed do
+                eiusmod.
+              </p>
+            </div>
+            <button
+              class="flex flex-row text-white gap-3 text-base items-center"
+            >
+              Read More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="p-6 border group nutrition-card hover:bg-[#2A9D8F] duration-500 h-72 flex flex-col justify-between rounded-lg"
+          >
+            <div>
+              <div class="text-2xl bg-[#F4F8FF] p-3 rounded-full inline-block">
+                <i class="fa-solid fa-head-side-mask"></i>
+              </div>
+              <h3
+                class="text-xl group-hover:text-white mt-4 font-semibold text-[#333B47]"
+              >
+                Learn to eat healthy food
+              </h3>
+              <p
+                class="text-[#969696] group-hover:text-white text-sm font-normal mt-2"
+              >
+                Lorem ipsum dolor sit amet ecteturolmer adipiscing elit sed do
+                eiusmod.
+              </p>
+            </div>
+            <button
+              class="flex flex-row group-hover:text-white text-[#212A3D] gap-3 text-base items-center"
+            >
+              Read More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+
+          <!-- 
+                  <Card
+                  cssStyle={"activeCard"}
+                  title={"Learn to eat healthy food"}
+                  details={
+                      "Lorem ipsum dolor sit amet ecteturolmer adipiscing elit sed do eiusmod."
+                  }
+                  >
+                  <FaHandHoldingMedical />
+                  </Card>
+                  <Card
+                  title={"Learn to eat healthy food"}
+                  details={
+                      "Lorem ipsum dolor sit amet ecteturolmer adipiscing elit sed do eiusmod."
+                  }
+                  >
+                  <RiMentalHealthFill />
+                  </Card> -->
+        </div>
+      </div>
+    </section>
+    <!-- Menu  -->
+    <div class="font-urbanist mt-16 lg:mt-40 bg-[#2A9D8F14] pt-20 pb-28">
+      <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-7 lg:gap-28">
+          <div class="lg:w-6/12 lg:text-left text-center">
+            <h2
+              class="text-[#110904] text-2xl leading-6 font-urbanist lg:text-5xl font-bold"
+            >
+              Try Our <span class="text-brand-1">Healthy</span> Menu
+            </h2>
+            <p class="text-base text-[#969696] leading-6 font-normal mt-4">
+              We always to provide the best value for you and your health, join
+              us to maximize the benefits
+            </p>
+            <div class="flex flex-col gap-5 mt-14">
+              <div
+                class="flex items-center flex-row gap-3 py rounded-3xl p-4 bg-[#FAFAFA] menu-active"
+              >
+                <img src="../assets/images/icons/gps.png" alt="" class="" />
+
+                <h6
+                  class="text-[#110904] font-semibold text-lg lg:text-2xl leading-normal"
+                >
+                  Breakfast Recipes
+                </h6>
+              </div>
+              <div
+                class="flex items-center flex-row gap-3 py rounded-3xl p-4 bg-[#FAFAFA]"
+              >
+                <img src="../assets/images/icons/gps2.png" alt="" class="" />
+
+                <h6
+                  class="text-[#110904] font-semibold text-lg lg:text-2xl leading-normal"
+                >
+                  Breakfast Recipes
+                </h6>
+              </div>
+              <div
+                class="flex items-center flex-row gap-3 py rounded-3xl p-4 bg-[#FAFAFA]"
+              >
+                <img src="../assets/images/icons/gps2.png" alt="" class="" />
+
+                <h6
+                  class="text-[#110904] font-semibold text-lg lg:text-2xl leading-normal"
+                >
+                  Holiday recipes
+                </h6>
+              </div>
+
+              <!-- 
+                        <List cssStyle={"activeList"} name={"Breakfast Recipes"}>
+                            <FaLocationCrosshairs />
+                        </List>
+                        <List name={"Breakfast Recipes"}>
+                            <FaLocationCrosshairs />
+                        </List>
+                        <List name={"Holiday recipes"}>
+                            <FaLocationCrosshairs />
+                        </List> -->
+            </div>
+          </div>
+          <div class="lg:w-6/12">
+            <img
+              width="505px"
+              height="611px"
+              src="./assets/images/banners/menu.svg"
+              alt="Menu Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video -->
+    <div class="bg-white py-14 font-urbanist">
+      <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+        <div
+          class="flex flex-col lg:flex-row gap-8 text-center lg:text-left lg:gap-28"
+        >
+          <h2
+            class="lg:w-7/12 text-2xl leading-tight lg:text-[32px] lg:text-5xl text-[#141414] font-semibold lg:leading-[50px]"
+          >
+            Watch Healthy food videos for
+            <span class="text-brand-1">healthy body</span>
+          </h2>
+          <p class="lg:w-5/12 text-sm lg:text-base font-normal leading-6">
+            In these videos, we'll share insights, techniques, and practices
+            that can help you manage stress, increase happiness, and achieve
+            optimal Nutrition Plan
+          </p>
+        </div>
+        <div class="mt-14">
+          <div class="flex flex-row justify-end gap-3 my-3">
+            <button
+              ref="{prev}"
+              class="text-lg flex items-center justify-center shadow-sm bg-grey-200 px-1 lg:px-3 py-1 lg:py-3 rounded-full"
+            >
+              <IoIosArrowBack alignmentBaseline="central" />
+            </button>
+            <button
+              ref="{next}"
+              class="text-lg flex items-center justify-center shadow-md shadow-grey-300 px-1 lg:px-3 py-1 lg:py-3 rounded-full"
+            >
+              <IoIosArrowForward />
+            </button>
+          </div>
+          <!-- <Swiper
+              slidesPerView={1}
+              breakpoints={breakPoints}
+              spaceBetween={20}
+              modules={[Navigation, Pagination, A11y]}
+              navigation={{
+                prevEl: prev.current,
+                nextEl: next.current,
+              }}
+              pagination={{
+                el: ".pagination-container",
+              }}
+              onInit={handleChange}
+            >
+              <SwiperSlide> -->
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="font-urbanist">
+              <div class="relative">
+                <img
+                  width="519px"
+                  height="397px"
+                  src="./assets/images/videos/video-poster-1.svg"
+                  alt="Video Image"
+                />
+                <img
+                  width="{55}"
+                  height="{51}"
+                  src="./assets/images/icons/play-icon.svg"
+                  alt="Play Icon"
+                  class="absolute top-[50%] left-[50%] cursor-pointer -translate-y-[50%] -translate-x-[50%]"
+                />
+              </div>
+              <div class="">
+                <p
+                  class="text-[#121212] mt-2 items-center flex flex-row justify-between text-sm lg:text-lg font-normal leading-tight lg:leading-7"
+                >
+                  Three-pronged intermediate movement
+                  <button class="">
+                    <FaArrowRight class="" />
+                  </button>
+                </p>
+              </div>
+            </div>
+
+            <div class="font-urbanist">
+              <div class="relative">
+                <img
+                  width="519px"
+                  height="397px"
+                  src="./assets/images/videos/video-poster-2.svg"
+                  alt="Video Image"
+                />
+                <img
+                  width="{55}"
+                  height="{51}"
+                  src="./assets/images/icons/play-icon.svg"
+                  alt="Play Icon"
+                  class="absolute top-[50%] left-[50%] cursor-pointer -translate-y-[50%] -translate-x-[50%]"
+                />
+              </div>
+              <div class="">
+                <p
+                  class="text-[#121212] mt-2 items-center flex flex-row justify-between text-sm lg:text-lg font-normal leading-tight lg:leading-7"
+                >
+                  Basic style of flexibility
+                  <button class="">
+                    <FaArrowRight class="" />
+                  </button>
+                </p>
+              </div>
+            </div>
+
+            <div class="font-urbanist">
+              <div class="relative">
+                <img
+                  width="519px"
+                  height="397px"
+                  src="./assets/images/videos/video-poster-1.svg"
+                  alt="Video Image"
+                />
+                <img
+                  width="{55}"
+                  height="{51}"
+                  src="./assets/images/icons/play-icon.svg"
+                  alt="Play Icon"
+                  class="absolute top-[50%] left-[50%] cursor-pointer -translate-y-[50%] -translate-x-[50%]"
+                />
+              </div>
+              <div class="">
+                <p
+                  class="text-[#121212] mt-2 items-center flex flex-row justify-between text-sm lg:text-lg font-normal leading-tight lg:leading-7"
+                >
+                  Three-pronged intermediate movement
+                  <button class="">
+                    <FaArrowRight class="" />
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <Card
+                  title={"Three-pronged intermediate movement"}
+                  image={"/images/videos/video-poster-1.svg"}
+                /> -->
+          <!-- </SwiperSlide>
+              <SwiperSlide> -->
+          <!-- <Card
+                  title={"Basic style of flexibility"}
+                  image={"/images/videos/video-poster-2.svg"}
+                /> -->
+          <!-- </SwiperSlide>
+              <SwiperSlide> -->
+          <!-- <Card
+                  title={"Three-pronged intermediate movement"}
+                  image={"/images/videos/video-poster-1.svg"}
+                /> -->
+          <!-- </SwiperSlide>
+              <SwiperSlide> -->
+          <!-- <Card
+                  title={"Basic style of flexibility"}
+                  image={"/images/videos/video-poster-2.svg"}
+                /> -->
+          <!-- </SwiperSlide>
+              <SwiperSlide> -->
+          <!-- <Card
+                  title={"Three-pronged intermediate movement"}
+                  image={"/images/videos/video-poster-1.svg"}
+                /> -->
+          <!-- </SwiperSlide>
+              <SwiperSlide> -->
+          <!-- <Card
+                  title={"Basic style of flexibility"}
+                  image={"/images/videos/video-poster-2.svg"}
+                /> -->
+          <!-- </SwiperSlide> -->
+          <!-- </Swiper> -->
+        </div>
+      </div>
+    </div>
+    <!-- Banner -->
+    <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+      <div class="bg-[#2A9D8F] rounded-lg">
+        <div class="flex flex-col md:flex-row flex-wrap md:flex-nowrap">
+          <div
+            class="basis-full md:basis-1/2 flex flex-col justify-center items-start p-3 md:p-5 lg:p-20"
+          >
+            <h2
+              class="font-poppins text-center lg:text-left font-semibold text-[24px] md:text-[32px] lg:text-h2 leading-9 text-white lg:leading-[60px] mb-7 pt-7 md:pt-0"
+            >
+              Helping you overcome your any kind of Nutrition challenges
+            </h2>
+            <a
+              href="/blog"
+              class="flex inline-block flex-row gap-2 items-center py-3 px-14 hover:bg-[#57d8c9d8] duration-500 active:bg-brand-1 font-medium text-[#2A9D8F] text-sm bg-[#ffffff] rounded-md"
+            >
+              <span>See Pricings </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M10.5 3.75L15.75 9M15.75 9L10.5 14.25M15.75 9L2.25 9"
+                  stroke="#2A9D8F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="basis-full md:basis-1/2 relative flex flex-col items-center justify-center"
+          >
+            <div class="hidden lg:block absolute -top-14 -right-14">
+              <img
+                width="222px"
+                height="222px"
+                class="block"
+                src="./assets/images/v-shape.svg"
+                alt="Advertise banner"
+              />
+            </div>
+            <img
+              width="500px"
+              height="350px"
+              class="p-5 lg:p-0"
+              src="./assets/images/banners/banner-2.svg"
+              alt="Advertise banner"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blogs -->
+    <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+      <div
+        class="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-between pt-20"
+      >
+        <h1
+          class="basis-full md:basis-1/2 text-[#141414] text-2xl lg:text-left text-center lg:text-4xl font-bold"
+        >
+          Read Our Best Articles for
+          <span class="text-[#2A9D8F]">Holistic Health</span>
+        </h1>
+        <span class="basis-full md:basis-1/2 lg:px-20">
+          <p
+            class="text-sm text-center lg:text-left lg:text-base font-normal mb-4 pb-4 pt-7 md:pt-0"
+          >
+            We'll share insights, techniques, and practices that can help you
+            manage stress, increase happiness
+          </p>
+          <div class="text-center">
+            <a
+              href="/blog"
+              class="rounded bg-brand-1 py-4 px-10 text-white text-base font-semibold"
+              >See More</a
+            >
+          </div>
+        </span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 gap-5">
+        <!-- blog -1 -->
+        <a
+          href="/blog/1"
+          class="w-full rounded-3xl shadow hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out"
+        >
+          <img
+            height="280px"
+            width="361px"
+            src="./assets/images/blogs/blog-post-1.svg"
+            alt="Blog Image"
+          />
+          <div class="w-full px-5 py-4">
+            <div class="flex flex-row justify-between">
+              <div class="flex flex-row gap-2 items-center">
+                <div class="w-2 h-2 rounded-full bg-brand-1"></div>
+                <p class="text-xs font-normal text-[#01010F] font-urbanist">
+                  BLOG, Saas
+                </p>
+              </div>
+              <p class="text-xs font-medium text-grey-500 font-urbanist">
+                11 May, 2023
+              </p>
+            </div>
+            <div class="mt-5">
+              <h4
+                class="font-semibold text-xl text-gray-950 font-urbanist leading-loose"
+              >
+                Vitality in Every Bite
+              </h4>
+              <p class="text-sm font-normal font-urbanist text-grey-600">
+                Guiding you on optimizing your nutritional choices to support
+                your overall well-being...
+              </p>
+              <button
+                class="mt-5 font-medium text-sm text-grey-500 news-button"
+              >
+                Read Full Artcile
+              </button>
+            </div>
+          </div>
+        </a>
+        <!-- blog -2 -->
+        <a
+          href="/blog/1"
+          class="w-full rounded-3xl shadow hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out"
+        >
+          <img
+            height="280px"
+            width="361px"
+            src="./assets/images/blogs/blog-post-2.svg"
+            alt="Blog Image"
+          />
+          <div class="w-full px-5 py-4">
+            <div class="flex flex-row justify-between">
+              <div class="flex flex-row gap-2 items-center">
+                <div class="w-2 h-2 rounded-full bg-brand-1"></div>
+                <p class="text-xs font-normal text-[#01010F] font-urbanist">
+                  BLOG, Saas
+                </p>
+              </div>
+              <p class="text-xs font-medium text-grey-500 font-urbanist">
+                11 May, 2023
+              </p>
+            </div>
+            <div class="mt-5">
+              <h4
+                class="font-semibold text-xl text-gray-950 font-urbanist leading-loose"
+              >
+                Nourish Your Way to Wellness
+              </h4>
+              <p class="text-sm font-normal font-urbanist text-grey-600">
+                Guiding you on optimizing your nutritional choices to support
+                your overall well-being...
+              </p>
+              <button
+                class="mt-5 font-medium text-sm text-grey-500 news-button"
+              >
+                Read Full Artcile
+              </button>
+            </div>
+          </div>
+        </a>
+        <!-- blog -3 -->
+        <a
+          href="/blog/1"
+          class="w-full rounded-3xl shadow hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out"
+        >
+          <img
+            height="280px"
+            width="361px"
+            src="./assets/images/blogs/blog-post-3.svg"
+            alt="Blog Image"
+          />
+          <div class="w-full px-5 py-4">
+            <div class="flex flex-row justify-between">
+              <div class="flex flex-row gap-2 items-center">
+                <div class="w-2 h-2 rounded-full bg-brand-1"></div>
+                <p class="text-xs font-normal text-[#01010F] font-urbanist">
+                  BLOG, Saas
+                </p>
+              </div>
+              <p class="text-xs font-medium text-grey-500 font-urbanist">
+                11 May, 2023
+              </p>
+            </div>
+            <div class="mt-5">
+              <h4
+                class="font-semibold text-xl text-gray-950 font-urbanist leading-loose"
+              >
+                Fueling Healthy Lifestyle Choices
+              </h4>
+              <p class="text-sm font-normal font-urbanist text-grey-600">
+                Guiding you on optimizing your nutritional choices to support
+                your overall well-being...
+              </p>
+              <button
+                class="mt-5 font-medium text-sm text-grey-500 news-button"
+              >
+                Read Full Artcile
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+      <div class="mb-16">
+        <h3
+          class="text-brand-2 text-center leading-tight font-semibold font-poppins lg:text-h3 text-[32px]"
+        >
+          Great Feedbacks from <span class="text-[#2A9D8F]">our clients</span>
+        </h3>
+        <p class="text-center text-[#1A1A1A] pt-3">
+          we'll share insights, techniques, and practices that can help you
+          manage stress, increase happiness
+        </p>
+      </div>
+
+      <div>
+        <div class="flex justify-center">
+          <!-- <Swiper slidesPerView={1} breakpoints={breakPoints} spaceBetween={20} modules={[Navigation, Pagination, A11y]}
+            navigation={{ prevEl: prev.current, nextEl: next.current, }} pagination={{ el: ".pagination-container" , }}
+            onInit={handleChange}>
+            <SwiperSlide>
+              <Card active={true}
+                review={ "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                } name={"Jonathon Rees!"} designation={"CEO at Coffee"} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={ "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                } name={"Jonathon Rees!"} designation={"CEO at Coffee"} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={ "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                } name={"Jonathon Rees!"} designation={"CEO at Coffee"} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={ "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                } name={"Jonathon Rees!"} designation={"CEO at Coffee"} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={ "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                } name={"Jonathon Rees!"} designation={"CEO at Coffee"} />
+            </SwiperSlide>
+          </Swiper> -->
+        </div>
+
+        <div class="my-5">
+          <div class="flex flex-row justify-end items-center gap-4">
+            <button
+              ref="{prev}"
+              class="text-2xl text-grey-600 hover:text-brand-1"
+            >
+              <FaArrowLeftLong />
+            </button>
+            <button ref="{next}" class="">
+              <FaArrowRightLong
+                class="text-2xl text-grey-600 hover:text-brand-1"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <section class="bg-brand-2 text-white py-10 px-3 lg:pt-20 lg:pb-12">
+      <div class="lg:max-w-6xl lg:pt-4 mx-auto">
+        <div class="flex flex-row flex-wrap lg:gap-10 gap-14">
+          <div class="basis-full md:basis-6/12 lg:basis-4/12">
+            <a class="flex gap-2 lg:justify-start justify-center" href="/">
+              <img
+                src="./assets/images/logo.svg"
+                width="60px"
+                height="45px"
+                alt="Site logo"
+              />
+              <span class="text-2xl font-bold">Nutrivital</span>
+            </a>
+            <p
+              class="lg:my-10 my-7 text-justify text-xs font-medium text-grey-200"
+            >
+              Always take care of your health starting from the food menu that
+              you consume every day.
+            </p>
+            <div class="w-full flex justify-center lg:justify-start">
+              <button
+                class="flex inline-block items-center justify-center flex-row gap-1 lg:gap-2 bg-brand-1 py-2 px-4 text-xs lg:text-sm text-white"
+              >
+                <IoCallOutline />
+                <span class="text"> (973) 068 2300</span>
+              </button>
+            </div>
+          </div>
+          <div class="basis-full md:basis-5/12 lg:basis-2/12">
+            <h3 class="text-xl mb-3 font-semibold font-urbanist">Company</h3>
+            <div class="flex flex-col gap-5 font-base text-lg text-[#AAAAAA]">
+              <a href="/blog"> Blog</a>
+              <a href="/price">Pricing</a>
+              <a href="/contact">Contact</a>
+              <a href="/faq">FAQ</a>
+            </div>
+          </div>
+          <div class="basis-full md:basis-5/12 lg:basis-2/12">
+            <h3 class="text-xl mb-3 font-semibold font-urbanist">
+              Quick Links
+            </h3>
+            <div class="flex flex-col font-base text-lg text-[#AAAAAA] gap-3">
+              <a href="/blog">Privacy Policy</a>
+              <a href="/price">Terms & Conditions</a>
+            </div>
+          </div>
+          <div class="basis-full md:basis-5/12 lg:basis-2/12">
+            <ul class="flex flex-col gap-3">
+              <li>
+                <h5 class="text-lg font-bold pb-1">Phone :</h5>
+                <h2 class="text-base">+1-123-456-7890</h2>
+              </li>
+              <li>
+                <h5 class="text-lg font-bold pb-1">Address :</h5>
+                <h2 class="text-base">+1-123-456-7890</h2>
+              </li>
+              <li>
+                <h5 class="text-lg font-bold pb-1">Email :</h5>
+                <h2 class="text-base">+1-123-456-7890</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center gap-7 pt-8 border-t border-grey-500 mt-12"
+        >
+          <p class="text-center text-sm lg:text-lg font-normal">
+            © 2023 Copyright By StackBuzz Inc. All Rights Reserved.
+          </p>
+          <ul class="flex flex-row gap-3">
+            <a href="/">
+              <img
+                src="../assets/images/icons/social-icon-1.svg"
+                alt=""
+                class=""
+              />
+            </a>
+
+            <a href="/">
+              <img
+                src="../assets/images/icons/social-icon-2.svg"
+                alt=""
+                class=""
+              />
+            </a>
+
+            <a href="/">
+              <img
+                src="../assets/images/icons/social-icon-3.svg"
+                alt=""
+                class=""
+              />
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

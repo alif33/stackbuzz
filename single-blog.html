@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Post - HTML</title>
+    <!-- Tailwind CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar Section -->
+      <div class="shadow-sm lg:block">
+        <div class="max-w-6xl mx-auto">
+          <div
+            class="flex flex-row justify-between py-4 px-2 lg:px-0 items-center"
+          >
+            <!-- left -->
+            <a href="/index.html">
+              <img src="/assets/images/icons/logo-2.svg" alt="Site Logo" />
+            </a>
+            <div
+              onclick="showMenu()"
+              class="bg-brand-1 cursor-pointer rounded-sm p-[5px] md:hidden"
+            >
+              <img
+                src="./assets/images/icons/hamburger-menu.svg"
+                alt=""
+                class="w-7"
+              />
+            </div>
+            <!-- sidebar -->
+            <div
+              class="hidden sidebar fixed top-0 right-0 h-full w-full z-[999] bg-brand-2 duration-300 transition-all"
+            >
+              <div class="flex flex-col p-5">
+                <button
+                  class="flex flex-row text-right justify-end rounded-md p-3"
+                >
+                  <img
+                    onclick="hideMenu()"
+                    src="./assets/images/icons/menu-close.svg"
+                    alt=""
+                    class="w-8 text-center"
+                  />
+                </button>
+                <div class="flex flex-col gap-3 mt-5">
+                  <a
+                    href="/about.html"
+                    class="text-lg px-5 py-3 font-semibold text-white hover:bg-grey-200 duration-300 hover:text-brand-1"
+                    >Home</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/about.html"
+                    >About</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/service.html"
+                    >Service</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/work.html"
+                    >Work</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/blog.html"
+                    >Blog</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/contact.html"
+                    >Contact</a
+                  >
+                  <a
+                    class="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1 text-white"
+                    href="/faq.html"
+                    >FAQ</a
+                  >
+                  <div
+                    class="mx-auto fixed bottom-5 right-[25%] flex flex-row gap-5"
+                  >
+                    <a
+                      class="py-2 px-3 ring-[1px] ring-gray-400 rounded-md text-white"
+                      href="/sign-in"
+                      >Signin</a
+                    >
+                    <a class="" href="/"
+                      ><button
+                        class="py-3 px-6 hover:bg-[#57d8c9d8] duration-500 active:bg-brand-1 undefined font-medium text-white text-sm bg-brand-1 rounded-md"
+                      >
+                        Get Started Free
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right  -->
+            <div
+              class="md:flex hidden md:gap-3 lg:gap-5 lg:flex flex-row items-center justify-end"
+            >
+              <a href="/about.html" class="text-brand-1 font-bold">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/service.html">Service</a>
+              <a href="/work.html">Work</a>
+              <a href="/blog.html">Blog</a>
+              <a href="/contact.html">Contact</a>
+              <a href="/faq.html">FAQ</a>
+
+              <div
+                class="flex md:ml-5 flex-row gap-5 text-lg text-[04091E] font-medium font-urbanist items-center"
+              >
+                <a
+                  href="/signin.html"
+                  class="ring-[1px] ring-gray-400 text-sm lg:rounded-md md:rounded-sm md:py-2 md:px-3 lg:py-3 lg:px-4"
+                >
+                  Sign In
+                </a>
+                <button
+                  class="ring-[1px] ring-brand-1 text-sm lg:py-3 lg:px-6 md:py-2 md:px-4 hover:bg-[#ffffff] duration-500 active:bg-brand-1 font-medium text-white hover:text-brand-1 bg-brand-1 lg:rounded-md md:rounded-sm"
+                >
+                  Get Started Free
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+    </header>
+    <!-- /Header -->
+    <!-- React to HTML -->
+    <div class="mt-20">
+      <div class="lg:max-w-6xl lg:pt-6 mx-auto px-4">
+        <div>
+          <div class="lg:max-w-6xl lg:pt-6 mx-auto px-4">
+            <image
+              src="/assets/images/blog/blog-banner.svg"
+              alt="Banner Image"
+            />
+            <div
+              class="my-8 flex border-b pb-12 border-b-grey-300 flex-row w-full"
+            >
+              <h2
+                class="text-[48px] lg:w-4/6 pt-6 font-poppins text-grey-900 font-semibold leading-tight"
+              >
+                What is SEO and why is it important for businesses?
+              </h2>
+              <div class="flex py-5 lg:w-2/6 flex-row gap-3">
+                <image
+                  src="/assets/images/avatar/avatar.svg"
+                  class="w-20 h-20 rounded-full"
+                  alt="Author Image"
+                />
+                <div class="">
+                  <h4
+                    class="font-semibold font-poppins text-3xl text-secondary-1 leading-normal"
+                  >
+                    AJOY SARKER
+                  </h4>
+                  <p class="text-lg font-urbanist leading-8 text-grey-400">
+                    May 14, 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="my-10">
+            <h3
+              class="text-3xl leading- mb-4 font-poppins text-secondary-1 font-semibold"
+            >
+              Top new features
+            </h3>
+            <div class="flex flex-col gap-5">
+              <p
+                class="text-lg text-grey-500 font-medium font-urbanist leading-8"
+              >
+                Whether your team is spread around a conference table or around
+                the world, a productive brainstorm can feel like a win, eng the
+                players and producing valuable content.
+              </p>
+              <p
+                class="text-lg text-grey-500 font-medium font-urbanist leading-8"
+              >
+                Unfortunately, there are plenty of things that can derail
+                brainstorming sessions, including unbalanced conversation
+                dominated byrts or quick thinkers, awkward silences that make
+                the whole meeting painful, and anchoring effects, where
+                participast idea or two that up during the meeting, stifling new
+                ideas and preventing the team from moving on.
+              </p>
+              <p
+                class="text-lg text-grey-500 font-medium font-urbanist leading-8"
+              >
+                No matter what field you are in, brainstorming is a fundamental
+                activity that can move ideas forward and produce better rReady
+                for better brainstorming? We’ve compiled the top five tips you
+                can use today to make brainstorming more fun.
+              </p>
+            </div>
+          </div>
+          <div class="my-10">
+            <h3
+              class="text-3xl leading- mb-4 font-poppins text-secondary-1 font-semibold"
+            >
+              TLead Generation: The Power Of “Free Samples”
+            </h3>
+            <div class="flex flex-col gap-5">
+              <p
+                class="text-lg text-grey-500 font-medium font-urbanist leading-8"
+              >
+                It’s easy to simply gather your group, state your problem, and
+                ask for ideas. But is this the most efficient way to generate
+                fresh, productive ideas? There are specialised methods for
+                brainstorming that take idea generation seriously, and you may
+                want to give some a try. They include:
+              </p>
+            </div>
+          </div>
+          <ul
+            class="list-disc ml-10 text-base text-grey-500 font-medium font-urbanist leading-8 flex flex-col gap-4"
+          >
+            <li>
+              Brainwriting: Everyone writes down three ideas and passes their
+              ideas to the person on their left (or right), who builds off those
+              ideas before passing them on again. This way, ideas can
+              cross-pollinate, morph and build on top of each other from
+              different perspectives. After all, two heads are better than one.
+            </li>
+            <li>
+              Rapid ideation: Everyone writes down as many ideas as they can in
+              a set amount of time before anything is discussed or critiqued.
+              This is a fun way to get all the good (and bad) ideas out fast and
+              bring a sense of fun urgency to the session.
+            </li>
+            <li>
+              Figure storming: The group picks a well-known figure who is not in
+              the room and asks how they would approach the problem. For
+              example, “How would Barack Obama (or Harry Potter, or anyone else)
+              approach this problem?” - prepare for some funny answers here,
+              this method is a good ice-breaker for everyone involved.
+            </li>
+
+            <li>
+              Change of scenery: Sometimes the conference room is not the best
+              place for brainstorming. Try moving outside, heading for lunch,
+              or.
+            </li>
+          </ul>
+          <div class="my-10 flex gap-7 flex-row">
+            <div class="flex-1">
+              <image
+                src="/assets/images/blog/blog-content-1.svg"
+                alt="Content Image"
+              />
+            </div>
+            <div class="flex-1">
+              <image
+                src="/assets/images/blog/blog-content-2.svg"
+                alt="Content Image"
+              />
+            </div>
+          </div>
+          <div class="flex flex-row pt-10 justify-between">
+            <div class="">
+              <p class="text-grey-500 font-urbanist text-lg">
+                Posted on may 12, 2023 by
+                <span class="text-secondary-1 font-extrabold underline">
+                  Brian Aude
+                </span>
+              </p>
+            </div>
+            <div class="flex items-center justify-end flex-row gap-4">
+              <p class="text-grey-500 font-urbanist text-lg">
+                Share this article
+              </p>
+              <button class="text-white py-4 bg-black px-4 rounded-full">
+                <img src="/assets/images/icons/link.svg" alt="" class="" />
+              </button>
+              <button class="text-white py-2 bg-black px-2 rounded-full">
+                <img
+                  src="/assets/images/icons/fb.svg"
+                  alt=""
+                  class=""
+                /></button
+              ><button class="text-white py-2 bg-black px-2 rounded-full">
+                <img
+                  src="/assets/images/icons/tw.svg"
+                  alt=""
+                  class=""
+                /></button
+              ><button class="text-white py-2 bg-black px-2 rounded-full">
+                <img src="/assets/images/icons/ins.svg" alt="" class="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="mt-24 mb-32 max-w-6xl mx-auto">
+      <!-- Similar Blog Section -->
+      <div class="">
+        <h3
+          class="text-[#12141D] font-poppins font-semibold text-[28px] leading-[42px]"
+        >
+          Similer Posts
+        </h3>
+        <div class="grid mt-12 lg:grid-cols-3 gap-5">
+          <!-- Blog card 1 -->
+          <a href="./single-blog.html" class="">
+            <div
+              class="w-full border rounded-3xl border-grey-200 blog-container hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out h-full"
+            >
+              <image
+                src="/assets/images/blog/blog-2.svg"
+                alt="News Image"
+                class="w-full h-[280px]"
+              />
+              <div class="w-full px-5 py-4">
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-row gap-2 items-center">
+                    <div class="w-2 h-2 rounded-full bg-brand-1"></div>
+                    <p class="text-xs font-normal text-[#01010F] font-urbanist">
+                      BLOG, Saas
+                    </p>
+                  </div>
+                  <p class="text-xs font-medium text-grey-500 font-urbanist">
+                    11 May, 2023
+                  </p>
+                </div>
+                <div class="mt-5">
+                  <h4
+                    class="font-semibold text-xl text-gray-950 font-urbanist leading-loose"
+                  >
+                    Best Saas platform For 2023
+                  </h4>
+                  <p class="text-sm font-normal font-urbanist text-grey-600">
+                    Software as a service (SaaS) allows users to connect to and
+                    use cloud-based apps over the Internet.
+                  </p>
+                  <button
+                    class="mt-5 font-medium text-sm text-grey-500 news-button"
+                  >
+                    Read Full Artcile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Blog card 2 -->
+          <a href="./single-blog.html" class="">
+            <div
+              class="w-full border rounded-3xl border-grey-200 blog-container hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out h-full"
+            >
+              <image
+                src="/assets/images/blog/blog-1.svg"
+                alt="News Image"
+                class="w-full h-[280px]"
+              />
+              <div class="w-full px-5 py-4">
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-row gap-2 items-center">
+                    <div class="w-2 h-2 rounded-full bg-brand-1"></div>
+                    <p class="text-xs font-normal text-[#01010F] font-urbanist">
+                      BLOG, Saas
+                    </p>
+                  </div>
+                  <p class="text-xs font-medium text-grey-500 font-urbanist">
+                    11 May, 2023
+                  </p>
+                </div>
+                <div class="mt-5">
+                  <h4
+                    class="font-semibold text-xl text-gray-950 font-urbanist leading-loose"
+                  >
+                    Best Saas platform For 2023
+                  </h4>
+                  <p class="text-sm font-normal font-urbanist text-grey-600">
+                    Software as a service (SaaS) allows users to connect to and
+                    use cloud-based apps over the Internet.
+                  </p>
+                  <button
+                    class="mt-5 font-medium text-sm text-grey-500 news-button"
+                  >
+                    Read Full Artcile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Blog card 3 -->
+          <a href="./single-blog.html" class="">
+            <div
+              class="w-full border rounded-3xl border-grey-200 blog-container hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out h-full"
+            >
+              <image
+                src="/assets/images/blog/blog-4.svg"
+                alt="News Image"
+                class="w-full h-[280px]"
+              />
+              <div class="w-full px-5 py-4">
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-row gap-2 items-center">
+                    <div class="w-2 h-2 rounded-full bg-brand-1"></div>
+                    <p class="text-xs font-normal text-[#01010F] font-urbanist">
+                      BLOG, Saas
+                    </p>
+                  </div>
+                  <p class="text-xs font-medium text-grey-500 font-urbanist">
+                    11 May, 2023
+                  </p>
+                </div>
+                <div class="mt-5">
+                  <h4
+                    class="font-semibold text-xl text-gray-950 font-urbanist leading-loose"
+                  >
+                    What is SEO and why is it important
+                  </h4>
+                  <p class="text-sm font-normal font-urbanist text-grey-600">
+                    Software as a service (SaaS) allows users to connect to and
+                    use cloud-based apps over the Internet.
+                  </p>
+                  <button
+                    class="mt-5 font-medium text-sm text-grey-500 news-button"
+                  >
+                    Read Full Artcile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- footer Section -->
+    <footer class="relative">
+      <!-- footer top -->
+      <div class="bg-brand-1 pt-20 pb-24 -z-10">
+        <img
+          src="/assets/images/footer/ring-1.png"
+          class="z-[999] lg:w-[50%] absolute right-0 -top-8"
+          alt=""
+        />
+        <div class="max-w-6xl mx-auto">
+          <div class="max-w-xl">
+            <h2
+              class="text-white font-urbanist text-[52px] leading-[58px] font-bold"
+            >
+              Let’s Talk about your next dream project
+            </h2>
+            <p
+              class="text-lg lg:max-w-[480px] text-white leading-7 font-urbanist mt-6"
+            >
+              We are committed to providing our best service to meet your
+              company's needs
+            </p>
+            <button
+              class="mt-12 text-secondary-1 py-4 rounded-md px-10 text-sm text-center bg-white"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom -->
+      <div class="bg-[#0A0A0A] pt-20 -z-50">
+        <div class="max-w-6xl mx-auto">
+          <div class="pb-24 border-b border-gray-50">
+            <img src="/assets/images/icons/logo-1.svg" alt="" class="" />
+            <!-- footer bottom left -->
+            <div class="flex flex-row gap-20">
+              <div
+                class="flex flex-col lg:flex-row gap-5 lg:gap-8 text-white mt-8 text-center lg:text-left lg:mt-20"
+              >
+                <div class="">
+                  <h6 class="font-bold font-urbanist leading-6">Phone :</h6>
+                  <p class="text-sm text-white font-urbanist">
+                    +1-123-456-7890
+                  </p>
+                </div>
+                <div class="">
+                  <h6 class="font-bold font-urbanist leading-6">address :</h6>
+                  <p class="text-sm text-white font-urbanist">
+                    123 Urban Street, Cityville, USA
+                  </p>
+                </div>
+                <div class="">
+                  <h6 class="font-bold font-urbanist leading-6">email :</h6>
+                  <p class="text-sm text-white font-urbanist">
+                    www.website.com
+                  </p>
+                </div>
+              </div>
+              <!-- footer bottom righ -->
+              <div class="flex flex-row gap-20">
+                <!-- Menu list -->
+                <div class="flex flex-col text-white gap-5">
+                  <a href="/" class="uppercase text-lg">Home</a>
+                  <a href="/" class="uppercase text-lg">About Us</a>
+                  <a href="/" class="uppercase text-lg">Services</a>
+                  <a href="/" class="uppercase text-lg">Portfolio</a>
+                  <a href="/" class="uppercase text-lg">Testimonials</a>
+                  <a href="/" class="uppercase text-lg">Blog</a>
+                  <a href="/" class="uppercase text-lg">Contact</a>
+                </div>
+                <div class="text-white text-lg leading-7">
+                  <p class="">Stay Connected: Follow us on social media:</p>
+                  <div class="flex flex-row mt-12 gap-6">
+                    <img src="/assets/images/icons/facebook.svg" alt="" />
+                    <img src="/assets/images/icons/twitter.svg" alt="" />
+                    <img src="/assets/images/icons/linkedin.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div
+            class="pt-8 flex flex-row justify-between items-center text-white font-urbanist font-bold text-lg pb-16"
+          >
+            <p class="">© 2023 Synergy. All rights reserved.</p>
+            <div class="flex flex-row gap-14">
+              <span class="uppercase">privacy policy</span>
+              <span class="uppercase">terms condition</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

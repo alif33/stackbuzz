@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iravit - HTML</title>
+    <!-- Tailwind CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar Section -->
+      <div class="shadow-sm">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-row justify-between py-3 items-center">
+            <!-- left -->
+            <a href="/index.html">
+              <img src="/assets/images/icons/logo-2.svg" alt="Site Logo" />
+            </a>
+            <img
+              onclick="showMenu()"
+              src="./assets/images/mobilemenu.png"
+              alt=""
+              class="w-7"
+            />
+            <!-- sidebar -->
+            <div
+              class="hidden sidebar fixed top-0 right-0 h-full w-full z-[999] bg-brand-2 duration-300 transition-all"
+            >
+              <div class="flex justify-start p-5">
+                <img
+                  onclick="hideMenu()"
+                  src="./assets/images/close.png"
+                  alt=""
+                  class="w-10 text-center"
+                />
+              </div>
+              <div class="flex flex-col text-white gap-1">
+                <a
+                  href="/about.html"
+                  class="text-lg font-bold hover:bg-brand-1 py-3 px-5"
+                  >Home</a
+                >
+                <a
+                  class="text-lg font-bold hover:bg-brand-1 py-3 px-5"
+                  href="/about.html"
+                  >About</a
+                >
+                <a
+                  class="text-lg font-bold bg-brand-1 hover:bg-brand-1 py-3 px-5"
+                  href="/service.html"
+                  >Service</a
+                >
+                <a
+                  class="text-lg font-bold hover:bg-brand-1 py-3 px-5"
+                  href="/work.html"
+                  >Work</a
+                >
+                <a
+                  class="text-lg font-bold hover:bg-brand-1 py-3 px-5"
+                  href="/blog.html"
+                  >Blog</a
+                >
+                <a
+                  class="text-lg font-bold hover:bg-brand-1 py-3 px-5"
+                  href="/contact.html"
+                  >Contact</a
+                >
+                <a
+                  class="text-lg font-bold hover:bg-brand-1 py-3 px-5"
+                  href="/faq.html"
+                  >FAQ</a
+                >
+              </div>
+            </div>
+            <!-- right -->
+            <div
+              class="md:flex hidden md:gap-3 lg:gap-5 lg:flex flex-row items-center justify-end"
+            >
+              <a href="/about.html" class="text-brand-1 font-bold">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/service.html">Service</a>
+              <a href="/work.html">Work</a>
+              <a href="/blog.html">Blog</a>
+              <a href="/contact.html">Contact</a>
+              <a href="/faq.html">FAQ</a>
+
+              <div
+                class="flex md:ml-5 flex-row gap-5 text-lg text-[04091E] font-medium font-urbanist items-center"
+              >
+                <a
+                  href="/signin.html"
+                  class="ring-[1px] ring-gray-400 text-sm lg:rounded-md md:rounded-sm md:py-2 md:px-3 lg:py-3 lg:px-4"
+                >
+                  Sign In
+                </a>
+                <button
+                  class="ring-[1px] ring-brand-1 text-sm lg:py-3 lg:px-6 md:py-2 md:px-4 hover:bg-[#ffffff] duration-500 active:bg-brand-1 font-medium text-white hover:text-brand-1 bg-brand-1 lg:rounded-md md:rounded-sm"
+                >
+                  Get Started Free
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- service Section -->
+    <section class="bg-[#2A9D8F0D] pt-16 pb-32">
+      <div class="max-w-6xl mx-auto">
+        <!-- Service Top -->
+        <div class="lg:max-w-xl mx-auto text-center">
+          <span class="bg-[#2a9d8f21] text-brand-1 rounded-full py-1 px-2"
+            >Our Services</span
+          >
+          <h2
+            class="lg:text-5xl font-poppins font-semibold leading-10 text-secondary-1 mt-5 mb-8"
+          >
+            We do creative services for your business needs
+          </h2>
+          <div class="text-[#01010FB2] font-urbanist text-lg">
+            <p class="">
+              We specialize in providing a comprehensive array of creative
+              services meticulously tailored to meet and exceed your unique
+              business requirements.
+            </p>
+          </div>
+        </div>
+        <!-- Service Bottom -->
+        <div class="grid grid-cols-3 h-full w-full gap-5">
+          <!-- Card 1 -->
+          <div
+            class="text-left shadow-lg bg-white shadow-slate-200 card rounded-3xl py-10 px-8 card"
+          >
+            <img src="/assets/images/icons/icon-2.svg" alt="Idea 1" class=" " />
+            <h4
+              class="mt-6 text-heading-2 text-2xl font-urbanist leading-6 font-bold"
+            >
+              Web & Mobile App Development
+            </h4>
+            <p class="text-[#4E4B66] font-urbanist text-lg mt-3">
+              The experts at App Coderz can help you make credible apps for
+              mobile devices and the web. We are at the forefront of technology
+              and can help you on your journey into the digital realm. Give us a
+              go, we will design the voyager for your business to reach a wider
+              audience.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="text-left shadow-lg bg-brand-1 text-white shadow-slate-200 card rounded-3xl py-10 px-8"
+          >
+            <img src="/assets/images/icons/icon-6.svg" alt="Idea 1" class=" " />
+            <h4 class="mt-6 text-2xl font-urbanist leading-6 font-bold">
+              Digital Marketing
+            </h4>
+            <p class="font-urbanist text-lg mt-3">
+              Digital marketing is a crucial component of your entire marketing
+              efforts, and App Coderz will assist you to be successful in it.
+              Digital marketing helps to engage and interact with a large number
+              of individuals about your brand, goods, and services to expand
+              your market fast..
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="text-left shadow-lg bg-white shadow-slate-200 card rounded-3xl py-10 px-8"
+          >
+            <img src="/assets/images/icons/icon-3.svg" alt="Idea 1" class=" " />
+            <h4
+              class="mt-6 text-heading-2 text-2xl font-urbanist leading-6 font-bold"
+            >
+              E-Commerce Solution
+            </h4>
+            <p class="text-[#4E4B66] font-urbanist text-lg mt-3">
+              E-commerce in the past couple of years is expanding rapidly. App
+              Coderz can help you plan out your Ecommerce Business so you can
+              keep up with the competition. We can help you set up a web store
+              that sells things all over the world and receive payments.
+            </p>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="text-left shadow-lg bg-white shadow-slate-200 card rounded-3xl py-10 px-8"
+          >
+            <img src="/assets/images/icons/icon-1.svg" alt="Idea 1" class=" " />
+            <h4
+              class="mt-6 text-heading-2 text-2xl font-urbanist leading-6 font-bold"
+            >
+              Search Engine Optimization
+            </h4>
+            <p class="text-[#4E4B66] font-urbanist text-lg mt-3">
+              When your brand shows up higher in search engine results, it will
+              reach more people, which will lead to more customers. App Coderz's
+              Search Engine Optimization can help your business expand at a
+              phenomenal rates.
+            </p>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="text-left shadow-lg bg-white shadow-slate-200 card rounded-3xl py-10 px-8"
+          >
+            <img src="/assets/images/icons/icon-5.svg" alt="Idea 1" class=" " />
+            <h4
+              class="mt-6 text-heading-2 text-2xl font-urbanist leading-6 font-bold"
+            >
+              Social Media Marketing
+            </h4>
+            <p class="text-[#4E4B66] font-urbanist text-lg mt-3">
+              Maintaining a social media presence helps to keep your company top
+              of mind for consumers. App Coderz's Social Media experts
+              understand the newest trends and strategies. Our experts will
+              strengthen your presence on social media.
+            </p>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="text-left shadow-lg bg-white shadow-slate-200 card rounded-3xl py-10 px-8"
+          >
+            <img src="/assets/images/icons/icon-4.svg" alt="Idea 1" class=" " />
+            <h4
+              class="mt-6 text-heading-2 text-2xl font-urbanist leading-6 font-bold"
+            >
+              Software Testing
+            </h4>
+            <p class="text-[#4E4B66] font-urbanist text-lg mt-3">
+              We offer our clients thorough software testing services. Our
+              experienced testing team uses both automated and manual testing
+              methods to test your web application and software as extensively
+              as possible for functionality, performance, and security.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- changes Section -->
+    <section class="mt-24 mb-36">
+      <div
+        class="max-w-6xl mx-auto flex flex-row items-center justify-center gap-20"
+      >
+        <!-- changes left -->
+        <div class="w-full">
+          <h2
+            class="text-[44px] text-[#1b1b1b] font-semibold leading-tight font-urbanist"
+          >
+            Increasing Chances Of A Better Tomorrow
+          </h2>
+          <p class="text-lg text-[#01010FB2] leading-7 font-urbanist mt-7">
+            We specialize in providing a comprehensive array of creative
+            services meticulously tailored to meet and exceed your unique
+            business requirements.
+          </p>
+          <div class="flex flex-col gap-8 mt-7">
+            <!-- item 1 -->
+            <div class="flex flex-row gap-3 items-center">
+              <img src="/assets/images/icons/check-icon.svg" alt="" class="" />
+              <p
+                class="text-lg font-urbanist font-semibold leading-7 text-[#000000B2]"
+              >
+                Providing Cutting-Edge Services
+              </p>
+            </div>
+            <!-- item 2 -->
+            <div class="flex flex-row gap-3 items-center">
+              <img src="/assets/images/icons/check-icon.svg" alt="" class="" />
+              <p
+                class="text-lg font-urbanist font-semibold leading-7 text-[#000000B2]"
+              >
+                Inventing Excellent To Improve It
+              </p>
+            </div>
+            <!-- item 3 -->
+            <div class="flex flex-row gap-3 items-center">
+              <img src="/assets/images/icons/check-icon.svg" alt="" class="" />
+              <p
+                class="text-lg font-urbanist font-semibold leading-7 text-[#000000B2]"
+              >
+                Creating New Possibilities
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- changes rig -->
+        <div class="w-full">
+          <img src="/assets/images/blog/blog-13.svg" alt="" class="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="mt-48 bg-[#2A9D8F0D] py-28">
+      <div class="max-w-6xl mx-auto">
+        <!-- Testimonial Top -->
+        <div class="mx-auto w-full text-center">
+          <span class="bg-[#2a9d8f21] text-brand-1 rounded-full py-1 px-2"
+            >Testimonial</span
+          >
+          <h2
+            class="lg:text-5xl lg:max-w-lg mx-auto font-poppins font-semibold leading-10 text-secondary-1 mt-4 mb-7"
+          >
+            What our customer says about Us
+          </h2>
+        </div>
+        <!-- Testimonial Carousel -->
+        <div class="relative flex flex-row w-full">
+          <!-- Navitatin button -->
+          <div class="">
+            <div
+              class="bg-white px-5 py-4 cursor-pointer select-none shadow-xl shadow-slate-200 rounded-full absolute top-[40%] flex items-center justify-center"
+            >
+              <svg
+                width="15"
+                height="25"
+                viewBox="0 0 15 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.0147 24.5C13.6813 24.8333 13.273 25 12.7897 25C12.3063 25 11.898 24.8333 11.5647 24.5L0.989649 13.9C0.63965 13.55 0.464649 13.1458 0.464649 12.6875C0.464649 12.2292 0.639649 11.825 0.989649 11.475L11.5646 0.875C11.898 0.541667 12.3063 0.375 12.7896 0.375C13.273 0.375 13.6813 0.541667 14.0146 0.875C14.348 1.20833 14.5146 1.6125 14.5146 2.0875C14.5146 2.5625 14.348 2.96667 14.0146 3.3L4.63965 12.675L14.0147 22.05C14.348 22.3833 14.5147 22.7917 14.5147 23.275C14.5147 23.7583 14.348 24.1667 14.0147 24.5Z"
+                  fill="#14142B"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-white px-5 py-4 top-[40%] cursor-pointer select-none shadow-xl shadow-slate-200 rounded-full absolute right-0 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="25"
+                viewBox="0 0 15 25"
+                fill="none"
+              >
+                <path
+                  d="M0.985352 0.5C1.31868 0.166666 1.72702 0 2.21035 0C2.69369 0 3.10202 0.166666 3.43535 0.5L14.0104 11.1C14.3604 11.45 14.5354 11.8542 14.5354 12.3125C14.5354 12.7708 14.3604 13.175 14.0104 13.525L3.43535 24.125C3.10202 24.4583 2.69369 24.625 2.21035 24.625C1.72702 24.625 1.31868 24.4583 0.985352 24.125C0.652018 23.7917 0.485352 23.3875 0.485352 22.9125C0.485352 22.4375 0.652018 22.0333 0.985352 21.7L10.3604 12.325L0.985352 2.95C0.652018 2.61667 0.485352 2.20833 0.485352 1.725C0.485352 1.24167 0.652018 0.833332 0.985352 0.5Z"
+                  fill="#14142B"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- card 1 -->
+          <div
+            class="flex max-w-4xl shadow-xl shadow-slate-300 select-none cursor-pointer mx-auto flex-row w-full p-14 gap-12 bg-white rounded-2xl"
+          >
+            <!-- card content -->
+            <div class="w-9/12">
+              <div class="">
+                <h4 class="text-heading-2 text-[26px] font-bold leading-7">
+                  Synergy is the best digital agency i have ever seen! Highly
+                  Recommended!
+                </h4>
+                <p
+                  class="text-[#4E4B66] mt-4 text-lg font-urbanist font-normal leading-6"
+                >
+                  I recently used Synergy z for a custom web development project
+                  and couldn't be happier with the results. The team was able to
+                  bring my unique ideas to life and create a website that truly
+                  stands out.
+                </p>
+              </div>
+              <div class="mt-9">
+                <h5 class="text-heading-2 font-bold text-xl leading-5">
+                  Diana Loreza
+                </h5>
+                <p class="text-[#FF3951] text-base leading-6 font-urbanist">
+                  Director of
+                  <span class="uppercase font-bold">Ufril Car Wash</span>
+                </p>
+              </div>
+            </div>
+            <!-- card Image -->
+            <div class="w-3/12">
+              <img src="/assets/images/avatar/avatar.svg" alt="Testimonial" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer Section -->
+    <footer class="relative">
+      <!-- footer top -->
+      <div class="bg-brand-1 pt-20 pb-24 -z-10">
+        <img
+          src="/assets/images/footer/ring-1.png"
+          class="z-[999] lg:w-[50%] absolute right-0 -top-8"
+          alt=""
+        />
+        <div class="max-w-6xl mx-auto">
+          <div class="max-w-xl">
+            <h2
+              class="text-white font-urbanist text-[52px] leading-[58px] font-bold"
+            >
+              Let’s Talk about your next dream project
+            </h2>
+            <p
+              class="text-lg lg:max-w-[480px] text-white leading-7 font-urbanist mt-6"
+            >
+              We are committed to providing our best service to meet your
+              company's needs
+            </p>
+            <button
+              class="mt-12 text-secondary-1 py-4 rounded-md px-10 text-sm text-center bg-white"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom -->
+      <div class="bg-[#0A0A0A] pt-20 -z-50">
+        <div class="max-w-6xl mx-auto">
+          <div class="pb-24 border-b border-gray-50">
+            <img src="/assets/images/icons/logo-1.svg" alt="" class="" />
+            <!-- footer bottom left -->
+            <div class="flex flex-row gap-20">
+              <div
+                class="flex flex-col lg:flex-row gap-5 lg:gap-8 text-white mt-8 text-center lg:text-left lg:mt-20"
+              >
+                <div class="">
+                  <h6 class="font-bold font-urbanist leading-6">Phone :</h6>
+                  <p class="text-sm text-white font-urbanist">
+                    +1-123-456-7890
+                  </p>
+                </div>
+                <div class="">
+                  <h6 class="font-bold font-urbanist leading-6">address :</h6>
+                  <p class="text-sm text-white font-urbanist">
+                    123 Urban Street, Cityville, USA
+                  </p>
+                </div>
+                <div class="">
+                  <h6 class="font-bold font-urbanist leading-6">email :</h6>
+                  <p class="text-sm text-white font-urbanist">
+                    www.website.com
+                  </p>
+                </div>
+              </div>
+              <!-- footer bottom righ -->
+              <div class="flex flex-row gap-20">
+                <!-- Menu list -->
+                <div class="flex flex-col text-white gap-5">
+                  <a href="/" class="uppercase text-lg">Home</a>
+                  <a href="/" class="uppercase text-lg">About Us</a>
+                  <a href="/" class="uppercase text-lg">Services</a>
+                  <a href="/" class="uppercase text-lg">Portfolio</a>
+                  <a href="/" class="uppercase text-lg">Testimonials</a>
+                  <a href="/" class="uppercase text-lg">Blog</a>
+                  <a href="/" class="uppercase text-lg">Contact</a>
+                </div>
+                <div class="text-white text-lg leading-7">
+                  <p class="">Stay Connected: Follow us on social media:</p>
+                  <div class="flex flex-row mt-12 gap-6">
+                    <img src="/assets/images/icons/facebook.svg" alt="" />
+                    <img src="/assets/images/icons/twitter.svg" alt="" />
+                    <img src="/assets/images/icons/linkedin.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div
+            class="pt-8 flex flex-row justify-between items-center text-white font-urbanist font-bold text-lg pb-16"
+          >
+            <p class="">© 2023 Synergy. All rights reserved.</p>
+            <div class="flex flex-row gap-14">
+              <span class="uppercase">privacy policy</span>
+              <span class="uppercase">terms condition</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

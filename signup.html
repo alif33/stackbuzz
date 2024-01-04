@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - HTML</title>
+    <!-- Tailwind CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="lg:max-w-6xl lg:pt-6 mx-auto px-4">
+        <div class="py-2 mb-2">
+            <a href="/">
+                <img src="/assets/images/icons/logo-2.svg" alt="logo" width="100" />
+            </a>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between md:items-start gap-10">
+            <div class="basis-full sm:basis-full md:basis-1/2 pt-3">
+                <h2 class="text-[#233B58] text-center lg:text-left leading-tight text-3xl lg:text-[40px] font-semibold">
+                    <span class="text-brand-1">Create</span> account
+                </h2>
+                <form class="flex flex-col gap-4 pt-5">
+                    <div class="flex flex-col gap-2">
+                        <label for="name" class="text-sm font-jakarta text-grey-400 ">
+                            Name
+                        </label>
+                        <input id="name" type="text" name="name" class="input"/>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="email" class="text-sm font-jakarta text-grey-400 ">
+                            Email
+                        </label>
+                        <input id="email" name="email" type="email" class="input"/>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="password" class="text-sm font-jakarta text-grey-400 ">
+                            Password
+                        </label>
+                        <div class="w-full relative">
+                            <input id="password" type="password" name="password" class="input w-full"/>
+                            <img 
+                                class="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
+                                src="/assets/images/icons/eye.svg" 
+                                alt="Eye icon"
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Sign Up" class="bg-[#2A9D8F] cursor-pointer text-white font-semibold text-base font-jakarta py-3 px-10 w-full rounded-md mt-7 lg:mt-5"/>
+                    </div>    
+                </form>
+                <button class="flex w-full mt-2 py-5 rounded-md gap-2 text-base font-semibold font-jakarta leading-5 text-[#233B58] flex-row items-center justify-center">
+                    <img src="/assets/images/icons/google.svg" alt="" class="">
+                    Signup with Google
+                </button>
+                <p class="text-grey-800 text-center mb-5 lg:mb-0 font-jakarta leading-[18px] font-normal text-sm">
+                    Already have an account?
+                    <a href="./signin.html">
+                        <span class="text-brand-1">Login here</span>
+                    </a>
+                </p>
+            </div>
+            <div class="basis-full md:basis-1/2 flex justify-end">
+                <img class="w-10/12" src="/assets/images/auth/signup.svg" alt="Login Image"/>
+            </div>
+        </div>
+    </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
