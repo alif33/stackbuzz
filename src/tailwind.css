@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* .swiper {
+    width: 100%;
+    height: 370px;
+} */
+
 .accordion-container .tab {
     position: relative;
     background: #fff;
