@@ -73,16 +73,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
   function getAnimationConfig(index) {
     const positions = [
-      { top: '50%', left: '20%', duration: 10 },
-      { top: '80%', left: '40%', duration: 12 },
+      { top: '20%', left: '25%', duration: 10 },
+      { top: '25%', left: '50%', duration: 12 },
       { top: '10%', left: '65%', duration: 15 },
-      { top: '50%', left: '70%', duration: 5 },
-      { top: '10%', left: '30%', duration: 10 },
-      // { top: '90%', left: '95%', duration: 7 },
-      { top: '80%', left: '5%', duration: 20 },
-      { top: '35%', left: '50%', duration: 13 },
-      { top: '5%', left: '5%', duration: 9 },
-      { top: '25%', left: '90%', duration: 15 },
+      { top: '15%', left: '70%', duration: 20 },
     ];
   
     return positions[index - 1];
