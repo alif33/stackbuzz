@@ -1442,6 +1442,10 @@ video {
   padding-bottom: 7rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -1488,14 +1492,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -1677,10 +1673,6 @@ video {
 
 .leading-normal {
   line-height: 1.5;
-}
-
-.leading-snug {
-  line-height: 1.375;
 }
 
 .leading-tight {
